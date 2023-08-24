@@ -1,0 +1,66 @@
+body{
+    background: #2f558e url(./img/bg.jpg);
+    font-family: sans-serif;
+    background-size: 1725px;
+}
+img{
+    display: block;
+    width: 250px;
+    height: 150px;
+    margin: 100px auto;
+}
+.spoilerButton{
+    background: rgb(221, 173, 52);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #493c11;
+    color:#372a02;
+    font-size: 24px;
+    padding: 40px 0;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto 20px;
+    width: 480px;
+    display: block;
+}
+.spoilerButton2{
+    background: rgb(221, 173, 52);
+    border-radius: 5px;
+    color: #372a02;
+    box-shadow: 5px 5px 5px #493c11;
+    font-size: 24px;
+    padding: 40px 0;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto 20px;
+    width: 480px;
+    display: block;
+    border: none;
+}
+.spoiler{
+    background: #372a02;
+    width: 440px;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+}
+.spoiler span{
+    color: rgb(221, 173, 52);
+    display: block;
+    padding: 40px 20px;
+}
+.spoiler2 {
+    background: #372a02;
+    width: 440px;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.spoiler2 span {
+    color: rgb(221, 173, 52);
+    display: block;
+    padding: 40px 20px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <img src="./img/snitch.png " alt="" />
+    <button class="spoilerButton">Reveal Spoiler</button>
+    <p class="spoiler"><span> Валендеморт помирає </span></p>
+    <button class="spoilerButton2">Reveal 2nd Spoiler</button>
+    <p class="spoiler2">
+      <span>Після смерті Волдеморта Гаррі знищує його чарівну паличку</span>
+    </p>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".spoiler").hide();
+      $(".spoiler2").hide();
+      $(".spoilerButton2").hide();
+
+      $(".spoilerButton").on("click", function () {
+        $(".spoilerButton").hide();
+        $(".spoiler").fadeIn(2000);
+        $(".spoilerButton2").fadeIn(2000);
+      });
+      $(".spoiler").on("click", function () {
+        $(".spoilerButton").fadeIn(2000);
+        $(".spoiler").hide();
+        $(".spoilerButton2").hide();
+      });
+
+      $(".spoilerButton2").on("click", function () {
+        $(".spoilerButton2").hide();
+        $(".spoiler2").fadeIn(2000);
+        $(".spoiler").hide();
+      });
+      $(".spoiler2").on("click", function () {
+        $(".spoilerButton2").fadeIn(2000);
+        $(".spoiler2").hide();
+        $(".spoiler").fadeIn(2000);
+      });
+    </script>
+  </body>
+</html>
